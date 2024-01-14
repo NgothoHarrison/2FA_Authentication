@@ -4,11 +4,11 @@ import qrcode
 
 key = "keythatisveryrandomandsecure"
 
-# totp = pyotp.TOTP(key)
-#
-# print(totp.now())
-#
-# input_code = input("Enter 2FA code : ")
+totp = pyotp.TOTP(key)
+
+print(totp.now())
+
+input_code = input("Enter 2FA code : ")
 
 uri = pyotp.totp.TOTP(key).provisioning_uri(name="Hank ",
                                             issuer_name="2FA APP by @CodeWithHank")
