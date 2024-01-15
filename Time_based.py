@@ -7,6 +7,10 @@ key = "keythatisveryrandomandsecure"
 uri = pyotp.totp.TOTP(key).provisioning_uri(name="Hank" 
                                             issuer_name="@CodeWithHank")
 
+print(uri)
+
+qrcode.make(uri).save("scan.png")
+
 # totp = pyotp.TOTP(key)
 
 # print(totp.now()) 
