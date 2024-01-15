@@ -4,7 +4,7 @@ import qrcode
 
 key = "keythatisveryrandomandsecure"
 
-uri = pyotp.totp.TOTP(key).provisioning_uri(name="Hank" 
+uri = pyotp.totp.TOTP(key).provisioning_uri(name="Hank", 
                                             issuer_name="@CodeWithHank")
 
 print(uri)
