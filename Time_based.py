@@ -6,7 +6,7 @@ key = "keythatisveryrandomandsecure"
 
 totp = pyotp.TOTP(key)
 
-print(totp.now())
+print(totp.now()) 
 
 input_code = input("Enter 2FA code : ")
 
