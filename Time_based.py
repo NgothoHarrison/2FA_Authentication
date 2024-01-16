@@ -17,4 +17,4 @@ if totp.verify(input_code):
 else:
     print("Access Denied")
 
-time.sleep(10)
+# time.sleep(10)
